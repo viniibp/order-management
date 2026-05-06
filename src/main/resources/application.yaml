@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: order-management
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/orderdb
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  jackson:
+    serialization:
+      indent_output: true
+
+jwt:
+  secret: minha-chave-secreta-super-segura-com-mais-de-32-caracteres!
+  expiration: 86400000
