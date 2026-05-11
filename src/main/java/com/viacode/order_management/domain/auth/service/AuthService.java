@@ -5,7 +5,9 @@ import com.viacode.order_management.domain.auth.model.UserRole;
 import com.viacode.order_management.domain.auth.port.TokenProviderPort;
 import com.viacode.order_management.domain.auth.port.UserRepositoryPort;
 import java.util.Optional;
+import org.springframework.stereotype.Service;
 
+@Service
 public class AuthService {
 
     private final UserRepositoryPort userRepositoryPort;
